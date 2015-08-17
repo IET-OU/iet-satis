@@ -1,16 +1,33 @@
 {
-    "name": "IET-OU test Composer repository",
-    "homepage": "http://iet-embed-acct.open.ac.uk/dev/satis/",
+    "name": "Test IET-OU 'Packagist'",
+    "description": "A test Composer repository, maintained by the <a href='http://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University.",
+    "homepage": "http://iet-embed-acct.open.ac.uk/satis/",
+
+    "twig-template": "vendor/composer/satis/views/iet-ou.html.twig",
+
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-oembed-providers" },
+
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-themes" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-extend" },
+        { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
+
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-evidence-hub" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/wp-iet-generic-plugins" },
         {
           "type": "package",
           "package": {
             "name": "johndyer/mediaelement",
+            "description": "HTML5 <video> and <audio> made easy. One file. Any browser. Same UI.",
+            "homepage": "http://mediaelementjs.com/",
             "version": "2.17.0",
             "license": "MIT",
+            "authors": [ { "name": "John Dyer" } ],
+            "support": {
+              "issues": "https://github.com/johndyer/mediaelement/issues",
+              "source": "https://github.com/johndyer/mediaelement"
+            },
             "dist": {
               "url": "https://github.com/johndyer/mediaelement/archive/2.17.0.zip",
               "type": "zip"
@@ -21,11 +38,25 @@
               "reference": "2.17.0"
             }
           }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "johndyer/mediaelement",
+          "version": "2.10.0",
+          "dist": {
+            "url": "https://github.com/johndyer/mediaelement/archive/2.10.0.zip",
+            "type": "zip"
+          }
         }
+      }
     ],
     "require-all": true,
 
     "//": [
-        "NDF, 8~10 July 2015."
+        "Composer repository/ Packagist -- Nick.Freear, 8~10 July 2015.",
+        "https://gist.github.com/nfreear/f7c2e1d5ee102932cc27",
+        "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md",
+        "root@server ... /dev_projects/satis-repo/satis (master)$ php bin/satis build ../satis.json ../web/"
     ]
 }

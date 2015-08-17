@@ -19,15 +19,17 @@
     "composer/satis": "dev-master"
   },
   "scripts": {
-    "post-install-cmd": "cp -n satis.TEMPLATE.json satis.json",
-    "cron": "satis build satis.json ./web/"
+    "post-install-cmd": [
+      "cp -n satis.TEMPLATE.json satis.json",
+      "ln -s ../../../../views/index.html.twig vendor/composer/satis/views/iet-ou.html.twig"
+    ],
+    "cron": "satis build satis.json ./web"
   },
 
   "extra": {
     "//": [
       "https://gist.github.com/nfreear/f7c2e1d5ee102932cc27",
-      "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md",
-      "root@server ... /dev_projects/satis-repo/satis (master)$ php bin/satis build ../satis.json ../web/"
+      "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md"
     ]
   }
 }
