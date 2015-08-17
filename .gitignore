@@ -1,0 +1,13 @@
+
+satis.json
+vendor/
+web/
+
+composer.lock
+
+*.diff
+*.patch
+*BAK*
+*copy*
+
+.DS_Store

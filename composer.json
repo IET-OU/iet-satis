@@ -1,0 +1,33 @@
+{
+  "name": "iet-ou/iet-satis",
+  "description": "Test IET-OU Composer repository (private 'Packagist' powered by Satis) + Crontab bash script. Maintained by the Institute of Educational Technology, at The Open University.",
+  "keywords": [ "ouplayer", "OpenUniversity", "IET-OU" ],
+  "homepage": "http://iet-embed-acct.open.ac.uk/satis/",
+  "type": "project",
+  "license": "proprietary",
+  "time": "2015-07-08",
+  "minimum-stability": "dev",
+  "authors": [
+    { "name": "Nick Freear (@nfreear)" }
+  ],
+  "support": {
+    "email": "iet-webmaster@open.ac.uk",
+    "source": "https://github.com/IET-OU/iet-satis"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/satis": "dev-master"
+  },
+  "scripts": {
+    "post-install-cmd": "cp -n satis.TEMPLATE.json satis.json",
+    "cron": "satis build satis.json ./web/"
+  },
+
+  "extra": {
+    "//": [
+      "https://gist.github.com/nfreear/f7c2e1d5ee102932cc27",
+      "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md",
+      "root@server ... /dev_projects/satis-repo/satis (master)$ php bin/satis build ../satis.json ../web/"
+    ]
+  }
+}

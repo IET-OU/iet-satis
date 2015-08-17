@@ -1,0 +1,31 @@
+{
+    "name": "IET-OU test Composer repository",
+    "homepage": "http://iet-embed-acct.open.ac.uk/dev/satis/",
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-oembed-providers" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/wp-evidence-hub" },
+        {
+          "type": "package",
+          "package": {
+            "name": "johndyer/mediaelement",
+            "version": "2.17.0",
+            "license": "MIT",
+            "dist": {
+              "url": "https://github.com/johndyer/mediaelement/archive/2.17.0.zip",
+              "type": "zip"
+            },
+            "// - source": {
+              "url": "https://github.com/johndyer/mediaelement.git",
+              "type": "git",
+              "reference": "2.17.0"
+            }
+          }
+        }
+    ],
+    "require-all": true,
+
+    "//": [
+        "NDF, 8~10 July 2015."
+    ]
+}
