@@ -23,6 +23,10 @@
       "cp -n satis.TEMPLATE.json satis.json",
       "ln -s ../../../../views/index.html.twig vendor/composer/satis/views/iet-ou.html.twig"
     ],
+    "test": [
+      "composer validate --no-interaction",
+      "php bin/satis-lint.php"
+    ],
     "cron": "satis build satis.json ./web"
   },
 
