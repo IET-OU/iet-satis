@@ -19,7 +19,7 @@
     "composer/satis": "dev-master"
   },
   "scripts": {
-    "post-install-cmd": [
+    "pre-install-cmd": [
       "cp -n satis.TEMPLATE.json satis.json",
       "ln -s ../../../../views/index.html.twig vendor/composer/satis/views/iet-ou.html.twig"
     ],
