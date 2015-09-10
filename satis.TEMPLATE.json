@@ -8,36 +8,15 @@
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-oembed-providers" },
-
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-themes" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-extend" },
-        { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
 
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-evidence-hub" },
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-iet-generic-plugins" },
-        {
-          "type": "package",
-          "package": {
-            "name": "nfreear/wp-accessify",
-            "type": "wordpress-plugin",
-            "version": "0.1-alpha",
-            "description": "Collaboratively improve the accessibility of your WordPress site. [LACE]+",
-            "homepage": "http://accessifywiki.org",
-            "license": "MIT",
-            "authors": [ { "name": "Nick Freear" } ],
-            "support": {
-              "source": "https://github.com/nfreear/wp-accessify"
-            },
-            "source": {
-              "type": "git",
-              "url": "https://github.com/nfreear/wp-accessify.git",
-              "reference": "master"
-            },
-            "require": {
-              "composer/installers": "~1.0"
-            }
-          }
-        },
+        { "type": "vcs", "url": "https://github.com/IET-OU/oer-evidence-hub-org" },
+
+        { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
+        { "type": "vcs", "url": "https://github.com/nfreear/wp-accessify" },
         {
           "type": "package",
           "package": {
@@ -52,7 +31,52 @@
             },
             "source": {
               "type": "git",
-              "url": "https://gist.github.com/nfreear/e374a098533a311b4044.git",
+              "url": "https://gist.github.com/nfreear/e374a098533a311b4044",
+              "reference": "master"
+            },
+            "require": {
+              "composer/installers": "~1.0"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "nfreear/wp-cdn-js-plugin",
+            "type": "wordpress-plugin",
+            "version": "0.4-dev",
+            "description": "CDN_JS: use Javascripts via CDN in WordPress. Example: define( 'CDN_JS', '//cdn.net/path/to/a.js //path/to/b.js' ); [LACE]+",
+            "license": "MIT",
+            "authors": [ { "name": "Nick Freear" } ],
+            "support": {
+              "source": "https://gist.github.com/nfreear/1d459d4a0a21d90d21c3"
+            },
+            "source": {
+              "type": "git",
+              "url": "https://gist.github.com/nfreear/1d459d4a0a21d90d21c3",
+              "reference": "master"
+            },
+            "require": {
+              "composer/installers": "~1.0"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "nfreear/sa-arrow-key-navigation-js",
+            "type": "wordpress-plugin",
+            "version": "0.2-dev",
+            "description": "Arrow keys for mega menu navigation - jQuery | Copyright © Simply Accessible Inc.",
+            "license": "proprietary",
+            "homepage": "http://simplyaccessible.com/article/arrow-key-navigation/",
+            "authors": [ { "name": "Jeff Smith" } ],
+            "support": {
+              "source": "https://gist.github.com/nfreear/568819ea9a233a3cfa4b"
+            },
+            "source": {
+              "type": "git",
+              "url": "https://gist.github.com/nfreear/568819ea9a233a3cfa4b",
               "reference": "master"
             },
             "require": {
@@ -164,10 +188,5 @@
         }
       }
     ],
-    "require-all": true,
-
-    "//": [
-        "https://gist.github.com/nfreear/f7c2e1d5ee102932cc27",
-        "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md"
-    ]
+    "require-all": true
 }
