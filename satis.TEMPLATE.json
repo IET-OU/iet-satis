@@ -67,10 +67,14 @@
             "name": "nfreear/sa-arrow-key-navigation-js",
             "type": "wordpress-plugin",
             "version": "0.2-dev",
-            "description": "Arrow keys for mega menu navigation - jQuery | Copyright © Simply Accessible Inc.",
+            "description": "Arrow keys for mega menu navigation - jQuery / JS | Copyright © Simply Accessible Inc. All rights reserved (used with permission).",
             "license": "proprietary",
             "homepage": "http://simplyaccessible.com/article/arrow-key-navigation/",
             "authors": [ { "name": "Jeff Smith" } ],
+            "authors": [
+              { "name": "Jeff Smith (original author)", "role": "author" },
+              { "name": "Nick Freear (edits)", "role": "modifier" }
+            ],
             "support": {
               "source": "https://gist.github.com/nfreear/568819ea9a233a3cfa4b"
             },
@@ -84,6 +88,8 @@
             }
           }
         },
+
+
         {
           "type": "package",
           "package": {
@@ -130,6 +136,8 @@
           }
         }
       },
+
+
       {
         "type": "package",
         "package": {
@@ -160,18 +168,32 @@
           "name": "wordpress/wordpress",
           "type": "webroot",
           "version": "4.3",
+          "dist": {
+            "type": "zip",
+            "url": "https://github.com/WordPress/WordPress/archive/4.3.zip"
+          }
+        }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "wordpress/wordpress",
+          "type": "webroot",
+          "version": "4.3.1",
           "description": "WordPress is web software you can use to create a beautiful website or blog.",
           "homepage": "https://wordpress.org/",
           "license": "GPL-2.0+",
           "dist": {
             "type": "zip",
-            "url": "https://github.com/WordPress/WordPress/archive/4.3.zip"
+            "url": "https://github.com/WordPress/WordPress/archive/4.3.1.zip"
           },
           "require": {
             "fancyguy/webroot-installer": "1.1.0"
           }
         }
       },
+
+
       {
         "type": "package",
         "package": {

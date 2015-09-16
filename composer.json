@@ -25,7 +25,8 @@
     ],
     "test": [
       "composer validate --no-interaction",
-      "php bin/satis-lint.php"
+      "php bin/satis-lint.php satis.json",
+      "php bin/satis-lint.php satis.TEMPLATE.json"
     ],
     "cron": "satis build satis.json ./web"
   },
