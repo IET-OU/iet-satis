@@ -7,9 +7,7 @@
   "license": "proprietary",
   "time": "2015-07-08",
   "minimum-stability": "dev",
-  "authors": [
-    { "name": "Nick Freear (@nfreear)" }
-  ],
+  "authors": [ { "name": "Nick Freear (@nfreear)" } ],
   "support": {
     "email": "iet-webmaster@open.ac.uk",
     "source": "https://github.com/IET-OU/iet-satis"
