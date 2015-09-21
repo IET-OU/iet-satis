@@ -15,6 +15,7 @@
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-iet-generic-plugins" },
         { "type": "vcs", "url": "https://github.com/IET-OU/oer-evidence-hub-org" },
 
+        { "type": "vcs", "url": "https://github.com/cftp/facetious" },
         { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
         { "type": "vcs", "url": "https://github.com/nfreear/wp-accessify" },
         {
