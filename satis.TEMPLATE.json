@@ -68,10 +68,9 @@
             "name": "nfreear/sa-arrow-key-navigation-js",
             "type": "wordpress-plugin",
             "version": "0.2-dev",
-            "description": "Arrow keys for mega menu navigation - jQuery / JS | Copyright © Simply Accessible Inc. All rights reserved (used with permission).",
+            "description": "Arrow keys for mega menu navigation – jQuery / JS / WordPress | Copyright © Simply Accessible Inc. All rights reserved (used with permission).",
             "license": "proprietary",
             "homepage": "http://simplyaccessible.com/article/arrow-key-navigation/",
-            "authors": [ { "name": "Jeff Smith" } ],
             "authors": [
               { "name": "Jeff Smith (original author)", "role": "author" },
               { "name": "Nick Freear (edits)", "role": "modifier" }
@@ -90,6 +89,29 @@
           }
         },
 
+        {
+          "type": "package",
+          "package": {
+            "name": "nfreear/wp-ignore-color-js",
+            "type": "wordpress-plugin",
+            "version": "0.2-dev",
+            "description": "Detect high contrast/ ignore colours browser/operating-system modes – accessibility – jQuery / WordPress [LACE]+",
+            "license": "MIT",
+            "homepage": "http://hardlikesoftware.com/weblog/2009/11/04/css-sprites-vs-high-contrast-mode/",
+            "authors": [ { "name": "Nick Freear (edits)" }, { "name": "John Snyder (original author)" } ],
+            "support": {
+              "source": "https://gist.github.com/nfreear/c82581b4485cd303150d"
+            },
+            "source": {
+              "type": "git",
+              "url": "https://gist.github.com/nfreear/c82581b4485cd303150d",
+              "reference": "master"
+            },
+            "require": {
+              "composer/installers": "~1.0"
+            }
+          }
+        },
 
         {
           "type": "package",
