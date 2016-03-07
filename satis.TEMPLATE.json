@@ -8,22 +8,26 @@
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-oembed-providers" },
+
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-themes" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-extend" },
 
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-evidence-hub" },
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-iet-generic-plugins" },
         { "type": "vcs", "url": "https://github.com/IET-OU/oer-evidence-hub-org" },
-
         { "type": "vcs", "url": "https://github.com/cftp/facetious" },
         { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
         { "type": "vcs", "url": "https://github.com/nfreear/wp-accessify" },
+
+        { "type": "vcs", "url": "https://github.com/accessifywiki/accessifywiki-api" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/jisc-workload" },
+
         {
           "type": "package",
           "package": {
             "name": "iet-ou/wp-ou-embed",
             "type": "wordpress-plugin",
-            "version": "0.1-dev",
+            "version": "0.4-dev",
             "description": "Embed Open Media Player, YouTube, Google Docs & other services. By IET at The Open University [LACE]+",
             "license": "MIT",
             "authors": [ { "name": "Nick Freear" } ],
@@ -45,7 +49,7 @@
           "package": {
             "name": "nfreear/wp-cdn-js-plugin",
             "type": "wordpress-plugin",
-            "version": "0.4-dev",
+            "version": "0.5-dev",
             "description": "CDN_JS: use Javascripts via CDN in WordPress. Example: define( 'CDN_JS', '//cdn.net/path/to/a.js //path/to/b.js' ); [LACE]+",
             "license": "MIT",
             "authors": [ { "name": "Nick Freear" } ],
@@ -62,6 +66,7 @@
             }
           }
         },
+
         {
           "type": "package",
           "package": {
@@ -113,40 +118,64 @@
           }
         },
 
-        {
-          "type": "package",
-          "package": {
-            "name": "johndyer/mediaelement",
-            "version": "2.18.1",
-            "description": "HTML5 <video> and <audio> made easy. One file. Any browser. Same UI.",
-            "homepage": "http://mediaelementjs.com/",
-            "license": "MIT",
-            "authors": [ { "name": "John Dyer" } ],
-            "support": {
-              "issues": "https://github.com/johndyer/mediaelement/issues",
-              "source": "https://github.com/johndyer/mediaelement"
-            },
-            "dist": {
-              "url": "https://github.com/johndyer/mediaelement/archive/2.18.1.zip",
-              "type": "zip"
-            },
-            "// - source": {
-              "url": "https://github.com/johndyer/mediaelement.git",
-              "type": "git",
-              "reference": "2.18.1"
-            }
+      {
+        "type": "package",
+        "package": {
+          "name": "johndyer/mediaelement",
+          "version": "2.20.1",
+          "description": "HTML5 <video> and <audio> made easy. One file. Any browser. Same UI.",
+          "homepage": "http://mediaelementjs.com/",
+          "license": "MIT",
+          "authors": [ { "name": "John Dyer" } ],
+          "support": {
+            "issues": "https://github.com/johndyer/mediaelement/issues",
+            "source": "https://github.com/johndyer/mediaelement"
+          },
+          "dist": {
+            "url": "https://github.com/johndyer/mediaelement/archive/2.20.1.zip",
+            "type": "zip"
+          },
+          "// - source": {
+            "url": "https://github.com/johndyer/mediaelement.git",
+            "type": "git",
+            "reference": "2.20.1"
           }
-        },
-        {
-          "type": "package",
-          "package": {
-            "name": "johndyer/mediaelement",
-            "version": "2.17.0",
-            "dist": {
-              "url": "https://github.com/johndyer/mediaelement/archive/2.17.0.zip",
-              "type": "zip"
-            }
+        }
+      },
+
+
+      {
+        "type": "package",
+        "package": {
+          "name": "johndyer/mediaelement",
+          "version": "2.18.2",
+          "dist": {
+            "url": "https://github.com/johndyer/mediaelement/archive/2.18.2.zip",
+            "type": "zip"
           }
+        }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "johndyer/mediaelement",
+          "version": "2.18.1",
+          "dist": {
+            "url": "https://github.com/johndyer/mediaelement/archive/2.18.1.zip",
+            "type": "zip"
+          }
+        }
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "johndyer/mediaelement",
+          "version": "2.17.0",
+          "dist": {
+            "url": "https://github.com/johndyer/mediaelement/archive/2.17.0.zip",
+            "type": "zip"
+          }
+        }
       },
       {
         "type": "package",
@@ -194,9 +223,13 @@
           "dist": {
             "type": "zip",
             "url": "https://github.com/WordPress/WordPress/archive/4.3.zip"
+          },
+          "require": {
+            "fancyguy/webroot-installer": "1.1.0"
           }
         }
       },
+
       {
         "type": "package",
         "package": {
@@ -233,5 +266,10 @@
         }
       }
     ],
-    "require-all": true
+    "require-all": true,
+
+    "//": [
+        "https://gist.github.com/nfreear/f7c2e1d5ee102932cc27",
+        "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md"
+    ]
 }
