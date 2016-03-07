@@ -22,7 +22,7 @@
     "squizlabs/php_codesniffer": "^2.5"
   },
   "scripts": {
-    "pre-install-cmd": [
+    "post-install-cmd": [
       "cp -n satis.TEMPLATE.json satis.json",
       "ln -s ../../../../views/index.html.twig vendor/composer/satis/views/iet-ou.html.twig"
     ],
@@ -35,7 +35,7 @@
       "phpcs --standard=PSR2 -n -l --encoding=utf-8 --extensions=php bin/*",
       "phpcs --standard=PSR2 -n -l --encoding=utf-8 --extensions=php views/*"
     ],
-    "fix": "phpcbf --standard=PSR2 --encoding=utf-8 --extensions=php bin/*",
+    "serve": "php -S localhost:8888 -t web/ 2>&1  # Press Ctrl-C to quit.",
     "list-script": "@composer list | grep \"as defined in composer.json\"",
     "cron": "satis build satis.json ./web"
   },

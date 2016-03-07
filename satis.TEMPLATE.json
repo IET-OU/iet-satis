@@ -266,10 +266,5 @@
         }
       }
     ],
-    "require-all": true,
-
-    "//": [
-        "https://gist.github.com/nfreear/f7c2e1d5ee102932cc27",
-        "https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md"
-    ]
+    "require-all": true
 }
