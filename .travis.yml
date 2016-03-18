@@ -12,13 +12,13 @@ before_install:
 install:
   - composer install
   - composer setup-satis
-  - ls -al && ls -al web/
 
 script:
   - composer cron
   - composer test
 
 after_script:
-  - grep -c IET-OU web/index.html
+  - ls -al; echo; ls -al web/
+  - composer travis-satis
 
 #End.

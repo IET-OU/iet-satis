@@ -5,9 +5,11 @@ web/
 
 composer.lock
 
+/*.svg
+*.log
 *.diff
 *.patch
 *BAK*
 *copy*
 
-.DS_Store
+#End.

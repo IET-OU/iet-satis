@@ -38,10 +38,15 @@
       "./vendor/bin/jsonlint satis.json",
       "php bin/satis-lint.php satis.TEMPLATE.json",
       "phpcs --standard=PSR2 -n -l --encoding=utf-8 --extensions=php bin/*",
-      "phpcs --standard=PSR2 -n -l --encoding=utf-8 --extensions=php views/*"
+      "phpcs --standard=PSR2 -n -l --encoding=utf-8 --extensions=php views/*",
+      "if grep -q IET-OU web/index.html; then echo HTML OK; else echo HTML fail; fi"
     ],
     "serve": "php -S localhost:8888 -t web/ 2>&1  # Press Ctrl-C to quit.",
-    "list-script": "@composer list | grep \"as defined in composer.json\"",
+    "list-script": "composer list | grep 'as defined in composer.json'",
+    "travis-satis": [
+      "wget -qO t.svg https://api.travis-ci.org/composer/satis.svg",
+      "if grep -q passing t.svg; then echo Pass; else echo Fail; fi"
+    ],
     "cron": "satis build satis.json ./web"
   },
 
