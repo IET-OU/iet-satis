@@ -23,8 +23,12 @@
     "squizlabs/php_codesniffer": "^2.5"
   },
   "scripts": {
-    "post-install-cmd": [
+    "X-post-install-cmd": [
       "cp -n satis.TEMPLATE.json satis.json",
+      "ln -s ../../../../views/index.html.twig vendor/composer/satis/views/iet-ou.html.twig"
+    ],
+    "setup-satis": [
+      "cp satis.TEMPLATE.json satis.json",
       "ln -s ../../../../views/index.html.twig vendor/composer/satis/views/iet-ou.html.twig"
     ],
     "test": [

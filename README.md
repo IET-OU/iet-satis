@@ -5,7 +5,7 @@
 
 IET's test/ private [Satis][]-based Packagist repository.
 
-* <http://iet-embed-acct.open.ac.uk/satis>
+* <https://embed.open.ac.uk/iet-satis>
 
 
 ## Installation
