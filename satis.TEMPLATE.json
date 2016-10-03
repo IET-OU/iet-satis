@@ -22,7 +22,6 @@
         { "type": "vcs", "url": "https://github.com/accessifywiki/accessifywiki-api" },
         { "type": "vcs", "url": "https://github.com/IET-OU/jisc-workload" },
         { "type": "vcs", "url": "https://github.com/IET-OU/moodle-backup-parser" },
-        { "type": "vcs", "url": "https://github.com/IET-OU/SAMSAuth" },
         { "type": "vcs", "url": "https://github.com/IET-OU/cloudengine" },
         { "type": "vcs", "url": "https://github.com/nfreear/QA" },
         { "type": "vcs", "url": "https://github.com/nfreear/http-file-dispatcher" },
