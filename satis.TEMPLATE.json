@@ -11,16 +11,45 @@
 
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-themes" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-extend" },
+        { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
 
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-evidence-hub" },
         { "type": "vcs", "url": "https://github.com/IET-OU/wp-iet-generic-plugins" },
         { "type": "vcs", "url": "https://github.com/IET-OU/oer-evidence-hub-org" },
         { "type": "vcs", "url": "https://github.com/cftp/facetious" },
-        { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
         { "type": "vcs", "url": "https://github.com/nfreear/wp-accessify" },
 
         { "type": "vcs", "url": "https://github.com/accessifywiki/accessifywiki-api" },
         { "type": "vcs", "url": "https://github.com/IET-OU/jisc-workload" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/moodle-backup-parser" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/applaud" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/SAMSAuth" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/cloudengine" },
+        { "type": "vcs", "url": "https://github.com/nfreear/QA" },
+        { "type": "vcs", "url": "https://github.com/nfreear/http-file-dispatcher" },
+
+        { "type": "vcs", "url": "https://github.com/nfreear/mycalendar", "#": "fork" },
+
+        {
+          "type": "package",
+          "package": {
+            "name": "codeclimate/fixme",
+            "type": "library",
+            "version": "1.0-beta+b95-plus",
+            "description": "Static analysis tool that finds FIXME, TODO, BUG, etc. comments in your code.",
+            "homepage": "https://docs.codeclimate.com/v1.0/docs/fixme",
+            "license": "MIT",
+            "authors": [ { "name": "Code Climate" } ],
+            "support": {
+              "source": "https://github.com/codeclimate/codeclimate-fixme"
+            },
+            "source": {
+              "type": "git",
+              "url": "https://github.com/codeclimate/codeclimate-fixme",
+              "reference": "master"
+            }
+          }
+        },
 
         {
           "type": "package",
@@ -73,7 +102,7 @@
             "name": "nfreear/sa-arrow-key-navigation-js",
             "type": "wordpress-plugin",
             "version": "0.2-dev",
-            "description": "Arrow keys for mega menu navigation – jQuery / JS / WordPress | Copyright © Simply Accessible Inc. All rights reserved (used with permission).",
+            "description": "Arrow keys for mega menu navigation - jQuery / JS | Copyright © Simply Accessible Inc. All rights reserved (used with permission).",
             "license": "proprietary",
             "homepage": "http://simplyaccessible.com/article/arrow-key-navigation/",
             "authors": [
@@ -245,6 +274,22 @@
           },
           "require": {
             "fancyguy/webroot-installer": "1.1.0"
+          }
+        }
+      },
+
+      {
+        "type": "package",
+        "package": {
+          "name": "wordpress/wordpress",
+          "type": "webroot",
+          "version": "4.5.3",
+          "dist": {
+            "type": "zip",
+            "url": "https://github.com/WordPress/WordPress/archive/4.5.3.zip"
+          },
+          "require": {
+            "fancyguy/webroot-installer": "^1.1.0"
           }
         }
       },
