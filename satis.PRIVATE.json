@@ -1,0 +1,7 @@
+{
+    "name": "Private IET-OU 'Packagist'",
+
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/IET-OU/applaud" }
+    ]
+}
