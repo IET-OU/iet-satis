@@ -17,6 +17,7 @@ install:
 script:
   - composer cron
   - composer test
+  - composer validate --no-interaction
 
 after_script:
   - ls -al; echo; ls -al web/

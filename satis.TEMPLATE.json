@@ -8,7 +8,6 @@
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-oembed-providers" },
-
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-themes" },
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-extend" },
         { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
@@ -27,6 +26,50 @@
         { "type": "vcs", "url": "https://github.com/nfreear/http-file-dispatcher" },
 
         { "type": "vcs", "url": "https://github.com/nfreear/mycalendar", "#": "fork" },
+
+        { "type": "vcs", "url": "https://github.com/IET-OU/moodle-auth_ouopenid" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/moodle-auth_openid", "#": "fork" },
+
+        {
+          "type": "package",
+          "package": {
+            "type": "webroot",
+            "name": "moodle/moodle",
+            "version": "3.2.4",
+            "license": "GPL-3.0+",
+            "description": "The world's open source learning platform.",
+            "homepage": "https://moodle.org",
+            "dist": { "url": "https://github.com/moodle/moodle/archive/v3.2.4.zip", "type": "zip" }
+          }
+        }, {
+          "type": "package",
+          "package": {
+            "type": "webroot",
+            "name": "moodle/moodle",
+            "version": "3.2.1",
+            "dist": { "url": "https://github.com/moodle/moodle/archive/v3.2.1.zip", "type": "zip" }
+          }
+        }, {
+          "type": "package",
+          "package": {
+            "type": "moodle-atto",
+            "name": "damyon/moodle-atto-count",
+            "version": "dev",
+            "license": "GPL-3.0+",
+            "description": "Word count plugin for Atto editor in Moodle.",
+            "source": { "url": "https://github.com/damyon/moodle-atto_count", "reference": "master", "type": "git" }
+          }
+        }, {
+          "type": "package",
+          "package": {
+            "type": "moodle-enrol",
+            "name": "bobopinna/moodle-enrol-autoenrol",
+            "version": "dev",
+            "license": "GPL-3.0+",
+            "description": "Auto enrol plugin for Moodle. Forked from markward/enrol_autoenrol and reorganised ...",
+            "source": { "url": "https://github.com/bobopinna/moodle-enrol_autoenrol", "reference": "master", "type": "git" }
+          }
+        },
 
         {
           "type": "package",
@@ -66,12 +109,9 @@
               "url": "https://gist.github.com/nfreear/e374a098533a311b4044",
               "reference": "master"
             },
-            "require": {
-              "composer/installers": "~1.0"
-            }
+            "require": { "composer/installers": "~1.0" }
           }
-        },
-        {
+        }, {
           "type": "package",
           "package": {
             "name": "nfreear/wp-cdn-js-plugin",
@@ -88,13 +128,9 @@
               "url": "https://gist.github.com/nfreear/1d459d4a0a21d90d21c3",
               "reference": "master"
             },
-            "require": {
-              "composer/installers": "~1.0"
-            }
+            "require": { "composer/installers": "~1.0" }
           }
-        },
-
-        {
+        }, {
           "type": "package",
           "package": {
             "name": "nfreear/sa-arrow-key-navigation-js",
@@ -115,13 +151,9 @@
               "url": "https://gist.github.com/nfreear/568819ea9a233a3cfa4b",
               "reference": "master"
             },
-            "require": {
-              "composer/installers": "~1.0"
-            }
+            "require": { "composer/installers": "~1.0" }
           }
-        },
-
-        {
+        }, {
           "type": "package",
           "package": {
             "name": "nfreear/wp-ignore-color-js",
@@ -139,159 +171,66 @@
               "url": "https://gist.github.com/nfreear/c82581b4485cd303150d",
               "reference": "master"
             },
-            "require": {
-              "composer/installers": "~1.0"
-            }
+            "require": { "composer/installers": "~1.0" }
           }
         },
 
-      {
-        "type": "package",
-        "package": {
-          "name": "johndyer/mediaelement",
-          "version": "2.20.1",
-          "description": "HTML5 <video> and <audio> made easy. One file. Any browser. Same UI.",
-          "homepage": "http://mediaelementjs.com/",
-          "license": "MIT",
-          "authors": [ { "name": "John Dyer" } ],
-          "support": {
-            "issues": "https://github.com/johndyer/mediaelement/issues",
-            "source": "https://github.com/johndyer/mediaelement"
-          },
-          "dist": {
-            "url": "https://github.com/johndyer/mediaelement/archive/2.20.1.zip",
-            "type": "zip"
-          },
-          "// - source": {
-            "url": "https://github.com/johndyer/mediaelement.git",
-            "type": "git",
-            "reference": "2.20.1"
+        {
+          "type": "package",
+          "package": {
+            "name": "johndyer/mediaelement",
+            "version": "2.23.5",
+            "description": "HTML5 <video> and <audio> made easy. One file. Any browser. Same UI.",
+            "homepage": "http://mediaelementjs.com/",
+            "license": "MIT",
+            "authors": [ { "name": "John Dyer" } ],
+            "support": {
+              "issues": "https://github.com/johndyer/mediaelement/issues",
+              "source": "https://github.com/mediaelement/mediaelement"
+            },
+            "dist": { "url": "https://github.com/mediaelement/mediaelement/archive/2.23.5.zip", "type": "zip" },
+            "// - source": {
+              "url": "https://github.com/johndyer/mediaelement.git", "type": "git", "reference": "2.23.5"
+            }
           }
-        }
-      },
+        }, {
+          "type": "package",
+          "package": {
+            "name": "johndyer/mediaelement",
+            "version": "2.20.1",
+            "dist": { "url": "https://github.com/johndyer/mediaelement/archive/2.20.1.zip", "type": "zip" }
+          }
+        },
 
-
-      {
-        "type": "package",
-        "package": {
-          "name": "johndyer/mediaelement",
-          "version": "2.18.2",
-          "dist": {
-            "url": "https://github.com/johndyer/mediaelement/archive/2.18.2.zip",
-            "type": "zip"
+        {
+          "type": "package",
+          "package": {
+            "name": "wordpress/wordpress",
+            "type": "webroot",
+            "version": "4.8",
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "https://wordpress.org/",
+            "license": "GPL-2.0+",
+            "dist": { "url": "https://github.com/WordPress/WordPress/archive/4.8.zip", "type": "zip" },
+            "require": { "fancyguy/webroot-installer": "1.1.0" }
           }
-        }
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "johndyer/mediaelement",
-          "version": "2.18.1",
-          "dist": {
-            "url": "https://github.com/johndyer/mediaelement/archive/2.18.1.zip",
-            "type": "zip"
+        }, {
+          "type": "package",
+          "package": {
+            "name": "wordpress/wordpress",
+            "type": "webroot",
+            "version": "4.7",
+            "dist": { "url": "https://github.com/WordPress/WordPress/archive/4.7.zip", "type": "zip" }
           }
-        }
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "johndyer/mediaelement",
-          "version": "2.17.0",
-          "dist": {
-            "url": "https://github.com/johndyer/mediaelement/archive/2.17.0.zip",
-            "type": "zip"
+        }, {
+          "type": "package",
+          "package": {
+            "name": "wordpress/wordpress",
+            "type": "webroot",
+            "version": "4.6.1",
+            "dist": { "url": "https://github.com/WordPress/WordPress/archive/4.6.1.zip", "type": "zip" }
           }
-        }
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "johndyer/mediaelement",
-          "version": "2.10.0",
-          "dist": {
-            "url": "https://github.com/johndyer/mediaelement/archive/2.10.0.zip",
-            "type": "zip"
-          }
-        }
-      },
-
-
-      {
-        "type": "package",
-        "package": {
-          "name": "wordpress/wordpress",
-          "type": "webroot",
-          "version": "4.1",
-          "dist": {
-            "type": "zip",
-            "url": "https://github.com/WordPress/WordPress/archive/4.1.zip"
-          }
-        }
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "wordpress/wordpress",
-          "type": "webroot",
-          "version": "4.2.2",
-          "dist": {
-            "type": "zip",
-            "url": "https://github.com/WordPress/WordPress/archive/4.2.2.zip"
-          }
-        }
-      },
-      {
-        "type": "package",
-        "package": {
-          "name": "wordpress/wordpress",
-          "type": "webroot",
-          "version": "4.3",
-          "dist": {
-            "type": "zip",
-            "url": "https://github.com/WordPress/WordPress/archive/4.3.zip"
-          },
-          "require": {
-            "fancyguy/webroot-installer": "1.1.0"
-          }
-        }
-      },
-
-      {
-        "type": "package",
-        "package": {
-          "name": "wordpress/wordpress",
-          "type": "webroot",
-          "version": "4.3.1",
-          "description": "WordPress is web software you can use to create a beautiful website or blog.",
-          "homepage": "https://wordpress.org/",
-          "license": "GPL-2.0+",
-          "dist": {
-            "type": "zip",
-            "url": "https://github.com/WordPress/WordPress/archive/4.3.1.zip"
-          },
-          "require": {
-            "fancyguy/webroot-installer": "1.1.0"
-          }
-        }
-      },
-
-      {
-        "type": "package",
-        "package": {
-          "name": "wordpress/wordpress",
-          "type": "webroot",
-          "version": "4.5.3",
-          "dist": {
-            "type": "zip",
-            "url": "https://github.com/WordPress/WordPress/archive/4.5.3.zip"
-          },
-          "require": {
-            "fancyguy/webroot-installer": "^1.1.0"
-          }
-        }
-      },
-
+        },
 
       {
         "type": "package",
@@ -302,10 +241,7 @@
           "homepage": "https://github.com/yatil/accessifyhtml5.js",
           "license": "MIT",
           "authors": [ { "name": "Eric Eggert" } ],
-          "dist": {
-            "url": "https://github.com/yatil/accessifyhtml5.js/zipball/master",
-            "type": "zip"
-          }
+          "dist": { "url": "https://github.com/yatil/accessifyhtml5.js/zipball/master", "type": "zip" }
         }
       }
     ],

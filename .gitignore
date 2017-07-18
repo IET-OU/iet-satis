@@ -11,5 +11,6 @@ composer.lock
 *.patch
 *BAK*
 *copy*
+/dropbox
 
 #End.

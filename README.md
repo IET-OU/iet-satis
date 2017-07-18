@@ -16,8 +16,7 @@ Install and test using Git and [Composer][] (also see this [how-to guide][howto]
     git clone https://github.com/IET-OU/iet-satis
     cd iet-satis
     composer install
-    composer test
-    composer cron
+    composer cron && composer test
 ```
 
 Configure cron,
@@ -31,13 +30,13 @@ Configure cron,
 
 * [Open Media Player](https://github.com/IET-OU/open-media-player#!composer.json)
 * [LACE Evidence Hub](https://github.com/IET-OU/oer-evidence-hub-org#!composer.json)
-* ...?
+* _... Lots more!_
 
 
 ---
 Thanks & kudos to the developers of [Satis][]!
 
-[iet-satis][]: © 2016 [The Open University][ou]. ([Institute of Educational Technology][iet])
+[iet-satis][]: © 2015-2017 [The Open University][ou]. ([Institute of Educational Technology][iet])
 
 
 [iet-satis]: https://github.com/IET-OU/iet-satis
