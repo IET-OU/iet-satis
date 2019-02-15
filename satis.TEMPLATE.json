@@ -1,6 +1,6 @@
 {
     "name": "iet-ou/iet-satis",
-    "description": "A test Composer repository, maintained by the <a href='https://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University.",
+    "description": "A Composer repository, maintained by the <a href='https://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University. (<a href='https://github.com/IET-OU/iet-satis'>fork</a>)",
     "homepage": "https://embed.open.ac.uk/iet-satis/",
 
     "twig-template": "views/index.html.twig",

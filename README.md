@@ -3,13 +3,13 @@
 
 # IET-OU / iet-satis
 
-IET's test/ private [Satis][]-based Packagist repository.
+IET's test/ private [Satis][]-based Packagist/Composer repository.
 
 * <https://embed.open.ac.uk/iet-satis>
 
 ## Usage
 
-Add IET's satis repository to your `composer.json`:
+Add the repository to your `composer.json`:
 
 ```json
 {
@@ -33,6 +33,8 @@ Install and test using Git and [Composer][] (also see this [how-to guide][howto]
     composer cron && composer test
 ```
 
+## Cron
+
 Configure cron,
 
 ```sh
@@ -40,15 +42,15 @@ Configure cron,
     sudo crontab -e
 ```
 
-Example Crontab:
+Example [crontab][]:
 
-```
-1 10,13,16,19 * * *  cd /PATH TO/satis-repo; bash cron.sh >> $HOME/cron-satis.log 2>&1
+```sh
+1 10,13,16,19 * * *  cd /PATH_TO/satis-repo; bash cron.sh >> $HOME/cron-satis.log 2>&1
 ```
 
 Archiving:
 
-```
+```php
 $ sudo find ./satis-repo/web/include/ -type f -name '*.json' -mtime +5 -exec mv {} ./satis-repo/web/include/_archive/ \;
 ```
 
@@ -56,7 +58,7 @@ $ sudo find ./satis-repo/web/include/ -type f -name '*.json' -mtime +5 -exec mv 
 
 * [Open Media Player](https://github.com/IET-OU/open-media-player#!composer.json)
 * [LACE Evidence Hub](https://github.com/IET-OU/oer-evidence-hub-org#!composer.json)
-* [search][And, lots more!]
+* [And, lots more!][search]
 
 ---
 _Thanks & kudos to the developers of [Satis][]!_
@@ -69,6 +71,7 @@ _Thanks & kudos to the developers of [Satis][]!_
 [howto]: https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md
     "Handling private packages with Satis"
 [Composer]: https://getcomposer.org/
+[crontab]: https://crontab.guru/#1_10,13,16,19_*_*_* " “At minute 1 past hour 10, 13, 16, and 19.” "
 [c]: https://www.open.ac.uk/copyright "Copyright © 2015-2017, 2019 The Open University (IET). All rights reserved."
 [iet]: https://iet.open.ac.uk/
 [ou]: https://www.open.ac.uk/

@@ -12,7 +12,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex,nofollow" />
+    {# <meta name="robots" content="noindex,nofollow" /> #}
     <meta name="copyright" content="© The Open University (IET)." />
 
     <title>{{ name|default('Composer repository') }}</title>
@@ -21,15 +21,12 @@
         {% include BASE ~ 'build/style.css' %}
 
         /* ou-specific */
-        a {
-          color: #395aa2;
-        }
-        .bg-primary {
-          background-color: #395aa2 !important;
-        }
-        .border-primary {
-          border-color: #395aa2 !important;
-        }
+        body        { background-color: #fefefe; }
+        a           { color: #395aa2; }
+        .bg-primary { background-color: #395aa2 !important; }
+        .border-primary { border-color: #395aa2 !important; }
+        .lead       { font-size: 1.1rem; }
+        small,.small{ font-size: smaller; }
     </style>
 </head>
 
@@ -99,6 +96,8 @@
         <p class="text-center ou-specific"><small>
           <a href="https://www.open.ac.uk/copyright" title="Copyright &copy; 2015-2019 The Open University (IET). All rights reserved.">&copy; The Open University (IET)</a>
           |
+          <a href="https://www.open.ac.uk/privacy">Privacy</a>
+          |
           <a href="https://github.com/IET-OU/iet-satis" title="Fork iet-satis, on GitHub">Fork</a></small></p>
     </div>
 </div>
@@ -106,6 +105,21 @@
 <script>
 {% include BASE ~ 'build/app.js' %}
 </script>
+
+<script id="ou-specific-js">
+((fetch, query, JSON_URL) => {
+  if (! /[\?&]debug=1/.test(query)) return;
+
+  fetch(JSON_URL)
+    .then(resp => resp.json())
+    .then(resp => fetch(Object.keys(resp.includes)[ 0 ]))
+    .then(resp => resp.json())
+    .then(resp => console.warn('Packages:', resp.packages))
+    .catch(error => console.error(error));
+})
+(window.fetch, window.location.href, './packages.json');
+</script>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="octicon-link" viewBox="0 0 16 16">
         <path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>

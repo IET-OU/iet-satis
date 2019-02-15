@@ -1,6 +1,6 @@
 {
   "name": "iet-ou/iet-satis",
-  "description": "Test IET-OU Composer repository (private 'Packagist' powered by Satis) + Crontab bash script. By IET, at The Open University.",
+  "description": "Test IET-OU Composer repository (private 'Packagist' powered by Satis) + Crontab bash script | ©The Open University (IET).",
   "keywords": [ "ouplayer", "OpenUniversity", "IET-OU" ],
   "homepage": "http://iet-embed-acct.open.ac.uk/satis/",
   "type": "project",
