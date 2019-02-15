@@ -1,9 +1,11 @@
 {
-    "name": "Test IET-OU 'Packagist'",
-    "description": "A test Composer repository, maintained by the <a href='http://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University.",
+    "name": "iet-ou/iet-satis",
+    "description": "A test Composer repository, maintained by the <a href='https://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University.",
     "homepage": "https://embed.open.ac.uk/iet-satis/",
 
-    "twig-template": "vendor/composer/satis/views/iet-ou.html.twig",
+    "twig-template": "views/index.html.twig",
+
+    "# Was: twig-template": "vendor/composer/satis/views/iet-ou.html.twig",
 
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },

@@ -1,10 +1,12 @@
 {
-    "name": "Private IET-OU 'Packagist'",
+    "name": "iet-ou/iet-satis-private",
 
     "repositories": [
 
         { "type": "vcs", "url": "https://github.com/IET-OU/tricky-topics-guide", "#": "private" },
         { "type": "vcs", "url": "https://github.com/IET-OU/SAMSAuth", "#": "private" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/sams-c-auth", "#": "private"  },
+        { "type": "vcs", "url": "https://github.com/IET-OU/ldap-ou", "#": "private" },
         { "type": "vcs", "url": "https://github.com/IET-OU/applaud", "#": "private" }
 
     ]

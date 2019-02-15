@@ -1,0 +1,19 @@
+{
+    "name": "iet-ou/iet-satis-ci",
+    "description": "A test Composer repository, maintained by the <a href='https://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University.",
+    "homepage": "https://embed.open.ac.uk/iet-satis/",
+
+    "twig-template": "views/index.html.twig",
+
+    "# Was: twig-template": "vendor/composer/satis/views/iet-ou.html.twig",
+
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-oembed-providers" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-themes" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-extend" },
+        { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
+        { "type": "vcs", "url": "https://github.com/IET-OU/cloudengine" }
+    ],
+    "require-all": true
+}

@@ -1,26 +1,25 @@
 language: php
-php:
-  - 7.0
+
+php: 7.0
   #- 5.6
 
 git:
   depth: 5
 
-before_install:
-  - composer self-update
-  - composer --version
+before_install: composer validate --no-interaction
+  # - composer self-update
+  # - composer --version
 
-install:
-  - composer install
-  - composer setup-satis
+install: composer install
+
+before_script: composer setup-ci  # Was: composer setup-satis
 
 script:
   - composer cron
   - composer test
-  - composer validate --no-interaction
 
 after_script:
-  - ls -al; echo; ls -al web/
+  - ls -alh; echo; ls -alh web/
   - composer travis-satis
 
-#End.
+# End.

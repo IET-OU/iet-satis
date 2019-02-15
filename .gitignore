@@ -8,5 +8,6 @@ web/
 *.diff
 *BAK*
 *copy*
+/views/vendor-views
 
 # End.
