@@ -2,15 +2,11 @@
 satis.json
 vendor/
 web/
-
-composer.lock
-
+# composer.lock
 /*.svg
 *.log
 *.diff
-*.patch
 *BAK*
 *copy*
-/dropbox
 
-#End.
+# End.
