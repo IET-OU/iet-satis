@@ -1,11 +1,13 @@
 {
+    "$schema": "https://raw.githubusercontent.com/composer/satis/master/res/satis-schema.json",
+
     "name": "iet-ou/iet-satis",
     "description": "A Composer repository, maintained by the <a href='https://iet.open.ac.uk'>Institute of Educational Technology</a>, at The Open University. (<a href='https://github.com/IET-OU/iet-satis'>fork</a>)",
     "homepage": "https://embed.open.ac.uk/iet-satis/",
 
     "twig-template": "views/index.html.twig",
 
-    "# Was: twig-template": "vendor/composer/satis/views/iet-ou.html.twig",
+    "_comment": [ "Was: twig-template: vendor/composer/satis/views/iet-ou.html.twig" ],
 
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },

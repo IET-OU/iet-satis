@@ -5,7 +5,7 @@
 
     "twig-template": "views/index.html.twig",
 
-    "# Was: twig-template": "vendor/composer/satis/views/iet-ou.html.twig",
+    "_comment": [ "Was: twig-template: vendor/composer/satis/views/iet-ou.html.twig" ],
 
     "repositories": [
         { "type": "vcs", "url": "https://github.com/IET-OU/open-media-player-core" },
