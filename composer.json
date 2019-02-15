@@ -49,7 +49,7 @@
       "if grep -q passing t.svg; then echo Pass; else echo Fail; fi"
     ],
     "get": "# scp root@iet-embed-acct.open.ac.uk:/var/www/dev_projects/satis-repo/satis.json ./satis-COPY.json",
-    "build": "@composer cron",
+    "build-ci": "satis build satis.json ./web -vvv",
     "cron": "satis build satis.json ./web"
   },
   "extra": {

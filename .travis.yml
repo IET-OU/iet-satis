@@ -16,12 +16,15 @@ before_script: composer setup-ci  # Was: composer setup-satis
 
 script:
   # https://stackoverflow.com/questions/18638395/--force-composer-to-use-https-instead-of-git#tabs
-  - composer config --global github-protocols https
-  - composer cron
+  # https://getcomposer.org/doc/06-config.md#github-protocols
+  #- composer config --global github-protocols https
+  - composer config --global use-github-api false
+  - composer build-ci # Was: cron
   - composer test
 
 after_script:
   - ls -alh; echo; ls -alh web/
+  - cat satis.json
   - composer travis-satis
   - composer validate --no-interaction
 

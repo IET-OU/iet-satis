@@ -15,5 +15,14 @@
         { "type": "vcs", "url": "https://github.com/nfreear/plugin-genie" },
         { "type": "vcs", "url": "https://github.com/IET-OU/cloudengine" }
     ],
+
+    "config": {
+      "_comment": "https://getcomposer.org/doc/06-config.md#github-protocols",
+
+      "preferred-install": "dist",
+      "github-protocols": [ "https" ],
+      "use-github-api": false
+    },
+
     "require-all": true
 }
